@@ -1,0 +1,580 @@
+2019-07-09 13:24:18.998 +12:00 [INF] User profile is available. Using 'C:\Users\Neco Yang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-09 13:24:20.356 +12:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0
+2019-07-09 13:24:20.356 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-07-09 13:24:20.373 +12:00 [INF] Request finished in 16.5482ms 200 
+2019-07-09 13:24:20.399 +12:00 [WRN] Failed to determine the https port for redirect.
+2019-07-09 13:24:20.609 +12:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Pegasus_backend.Controllers.ValuesController (Pegasus_backend).
+2019-07-09 13:24:20.761 +12:00 [INF] Executing action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 13:24:20.772 +12:00 [INF] Executed action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1.9925000000000002ms.
+2019-07-09 13:24:20.779 +12:00 [INF] Executing ObjectResult, writing value of type 'System.DateTime'.
+2019-07-09 13:24:20.826 +12:00 [INF] Executed action Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) in 213.116ms
+2019-07-09 13:24:20.837 +12:00 [INF] Request finished in 482.0339ms 200 application/json; charset=utf-8
+2019-07-09 13:24:21.188 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-07-09 13:24:21.196 +12:00 [INF] Request finished in 7.3396ms 404 
+2019-07-09 13:24:22.052 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices/5  
+2019-07-09 13:24:22.067 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNotices(Int32) on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 13:24:22.080 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 13:24:22.964 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 13:24:25.072 +12:00 [INF] Executed DbCommand (382ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`notice_id`, `e`.`created_at`, `e`.`from_staff_id`, `e`.`is_completed`, `e`.`notice`, `e`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `e`
+WHERE `e`.`notice_id` = @__get_Item_0
+LIMIT 1
+2019-07-09 13:24:25.089 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.NotFoundResult in 3008.9904ms.
+2019-07-09 13:24:25.091 +12:00 [INF] Executing HttpStatusCodeResult, setting HTTP status code 404
+2019-07-09 13:24:25.091 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 3023.9635000000003ms
+2019-07-09 13:24:25.091 +12:00 [INF] Request finished in 3039.293ms 404 
+2019-07-09 13:24:28.509 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices/2  
+2019-07-09 13:24:28.509 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNotices(Int32) on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 13:24:28.510 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 13:24:28.511 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 13:24:29.299 +12:00 [INF] Executed DbCommand (218ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`notice_id`, `e`.`created_at`, `e`.`from_staff_id`, `e`.`is_completed`, `e`.`notice`, `e`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `e`
+WHERE `e`.`notice_id` = @__get_Item_0
+LIMIT 1
+2019-07-09 13:24:29.347 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 836.8247ms.
+2019-07-09 13:24:29.347 +12:00 [INF] Executing ObjectResult, writing value of type 'Pegasus_backend.pegasusContext.Notices'.
+2019-07-09 13:24:29.360 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 850.02320000000009ms
+2019-07-09 13:24:29.360 +12:00 [INF] Request finished in 851.2855ms 200 application/json; charset=utf-8
+2019-07-09 13:25:29.369 +12:00 [INF] User profile is available. Using 'C:\Users\Neco Yang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-09 13:25:29.951 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-07-09 13:25:29.951 +12:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0
+2019-07-09 13:25:29.965 +12:00 [INF] Request finished in 14.3497ms 200 
+2019-07-09 13:25:29.987 +12:00 [WRN] Failed to determine the https port for redirect.
+2019-07-09 13:25:30.168 +12:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Pegasus_backend.Controllers.ValuesController (Pegasus_backend).
+2019-07-09 13:25:30.310 +12:00 [INF] Executing action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 13:25:30.322 +12:00 [INF] Executed action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.8018ms.
+2019-07-09 13:25:30.331 +12:00 [INF] Executing ObjectResult, writing value of type 'System.DateTime'.
+2019-07-09 13:25:30.376 +12:00 [INF] Executed action Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) in 204.5952ms
+2019-07-09 13:25:30.382 +12:00 [INF] Request finished in 433.1578ms 200 application/json; charset=utf-8
+2019-07-09 13:25:30.711 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-07-09 13:25:30.713 +12:00 [INF] Request finished in 2.2266ms 404 
+2019-07-09 13:25:35.628 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices  
+2019-07-09 13:25:35.632 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Pegasus_backend.pegasusContext.Notices] GetNotices() on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 13:25:35.633 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 13:25:35.633 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.28900000000000003ms.
+2019-07-09 13:25:35.634 +12:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Pegasus_backend.pegasusContext.Notices, Pegasus_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-09 13:25:36.515 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 13:25:38.405 +12:00 [INF] Executed DbCommand (252ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`notice_id`, `n`.`created_at`, `n`.`from_staff_id`, `n`.`is_completed`, `n`.`notice`, `n`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `n`
+2019-07-09 13:25:38.481 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 2848.8997ms
+2019-07-09 13:25:38.482 +12:00 [INF] Request finished in 2854.5237ms 200 application/json; charset=utf-8
+2019-07-09 14:30:45.883 +12:00 [INF] User profile is available. Using 'C:\Users\Neco Yang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-09 14:30:46.711 +12:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0
+2019-07-09 14:30:46.711 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-07-09 14:30:46.726 +12:00 [INF] Request finished in 15.6057ms 200 
+2019-07-09 14:30:46.750 +12:00 [WRN] Failed to determine the https port for redirect.
+2019-07-09 14:30:46.944 +12:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Pegasus_backend.Controllers.ValuesController (Pegasus_backend).
+2019-07-09 14:30:47.088 +12:00 [INF] Executing action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:30:47.100 +12:00 [INF] Executed action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.2321ms.
+2019-07-09 14:30:47.108 +12:00 [INF] Executing ObjectResult, writing value of type 'System.DateTime'.
+2019-07-09 14:30:47.152 +12:00 [INF] Executed action Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) in 204.6279ms
+2019-07-09 14:30:47.163 +12:00 [INF] Request finished in 453.6462ms 200 application/json; charset=utf-8
+2019-07-09 14:30:47.504 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-07-09 14:30:47.508 +12:00 [INF] Request finished in 4.2734ms 404 
+2019-07-09 14:31:03.081 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices  
+2019-07-09 14:31:03.084 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Pegasus_backend.pegasusContext.Notices] GetNotices() on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 14:31:03.096 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:31:03.096 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.2864ms.
+2019-07-09 14:31:03.097 +12:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Pegasus_backend.pegasusContext.Notices, Pegasus_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-09 14:31:03.996 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:31:07.122 +12:00 [INF] Executed DbCommand (66ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`notice_id`, `n`.`created_at`, `n`.`from_staff_id`, `n`.`is_completed`, `n`.`notice`, `n`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `n`
+2019-07-09 14:31:07.181 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 4096.5254ms
+2019-07-09 14:31:07.182 +12:00 [INF] Request finished in 4100.3853ms 200 application/json; charset=utf-8
+2019-07-09 14:31:13.246 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices/1  
+2019-07-09 14:31:13.259 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNotices(Int32) on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 14:31:13.270 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:31:13.274 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:31:14.358 +12:00 [INF] Executed DbCommand (358ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`notice_id`, `e`.`created_at`, `e`.`from_staff_id`, `e`.`is_completed`, `e`.`notice`, `e`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `e`
+WHERE `e`.`notice_id` = @__get_Item_0
+LIMIT 1
+2019-07-09 14:31:14.369 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 1098.4168ms.
+2019-07-09 14:31:14.369 +12:00 [INF] Executing ObjectResult, writing value of type 'Pegasus_backend.pegasusContext.Notices'.
+2019-07-09 14:31:14.369 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 1110.2592ms
+2019-07-09 14:31:14.369 +12:00 [INF] Request finished in 1123.3993ms 200 application/json; charset=utf-8
+2019-07-09 14:31:42.192 +12:00 [INF] User profile is available. Using 'C:\Users\Neco Yang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-09 14:31:43.009 +12:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0
+2019-07-09 14:31:43.009 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-07-09 14:31:43.023 +12:00 [INF] Request finished in 13.3354ms 200 
+2019-07-09 14:31:43.052 +12:00 [WRN] Failed to determine the https port for redirect.
+2019-07-09 14:31:43.279 +12:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Pegasus_backend.Controllers.ValuesController (Pegasus_backend).
+2019-07-09 14:31:43.505 +12:00 [INF] Executing action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:31:43.518 +12:00 [INF] Executed action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.3216ms.
+2019-07-09 14:31:43.529 +12:00 [INF] Executing ObjectResult, writing value of type 'System.DateTime'.
+2019-07-09 14:31:43.567 +12:00 [INF] Executed action Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) in 285.9852ms
+2019-07-09 14:31:43.576 +12:00 [INF] Request finished in 568.9526ms 200 application/json; charset=utf-8
+2019-07-09 14:31:43.926 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-07-09 14:31:43.933 +12:00 [INF] Request finished in 7.5673ms 404 
+2019-07-09 14:31:49.518 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices  
+2019-07-09 14:31:49.526 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Pegasus_backend.pegasusContext.Notices] GetNotices() on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 14:31:49.526 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:31:49.527 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.2906ms.
+2019-07-09 14:31:49.527 +12:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Pegasus_backend.pegasusContext.Notices, Pegasus_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-09 14:31:50.410 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:31:54.354 +12:00 [INF] Executed DbCommand (492ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`notice_id`, `n`.`created_at`, `n`.`from_staff_id`, `n`.`is_completed`, `n`.`notice`, `n`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `n`
+2019-07-09 14:31:54.422 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 4896.371ms
+2019-07-09 14:31:54.423 +12:00 [INF] Request finished in 4905.7554ms 200 application/json; charset=utf-8
+2019-07-09 14:33:41.241 +12:00 [INF] User profile is available. Using 'C:\Users\Neco Yang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-09 14:33:41.797 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-07-09 14:33:41.797 +12:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0
+2019-07-09 14:33:41.812 +12:00 [INF] Request finished in 14.3084ms 200 
+2019-07-09 14:33:41.837 +12:00 [WRN] Failed to determine the https port for redirect.
+2019-07-09 14:33:42.020 +12:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Pegasus_backend.Controllers.ValuesController (Pegasus_backend).
+2019-07-09 14:33:42.163 +12:00 [INF] Executing action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:33:42.174 +12:00 [INF] Executed action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.0088ms.
+2019-07-09 14:33:42.182 +12:00 [INF] Executing ObjectResult, writing value of type 'System.DateTime'.
+2019-07-09 14:33:42.223 +12:00 [INF] Executed action Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) in 199.9942ms
+2019-07-09 14:33:42.227 +12:00 [INF] Request finished in 431.4201ms 200 application/json; charset=utf-8
+2019-07-09 14:33:42.592 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-07-09 14:33:42.594 +12:00 [INF] Request finished in 2.1952ms 404 
+2019-07-09 14:33:48.306 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices  
+2019-07-09 14:33:48.308 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Pegasus_backend.pegasusContext.Notices] GetNotices() on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 14:33:48.309 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:33:48.309 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.24600000000000002ms.
+2019-07-09 14:33:48.312 +12:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Pegasus_backend.pegasusContext.Notices, Pegasus_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-09 14:33:49.242 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:33:50.249 +12:00 [INF] Executed DbCommand (36ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`notice_id`, `n`.`created_at`, `n`.`from_staff_id`, `n`.`is_completed`, `n`.`notice`, `n`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `n`
+2019-07-09 14:33:50.312 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 2003.6574ms
+2019-07-09 14:33:50.313 +12:00 [INF] Request finished in 2006.7515ms 200 application/json; charset=utf-8
+2019-07-09 14:51:45.088 +12:00 [INF] User profile is available. Using 'C:\Users\Neco Yang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-09 14:51:45.785 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-07-09 14:51:45.785 +12:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0
+2019-07-09 14:51:45.800 +12:00 [INF] Request finished in 14.8512ms 200 
+2019-07-09 14:51:45.823 +12:00 [WRN] Failed to determine the https port for redirect.
+2019-07-09 14:51:46.009 +12:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Pegasus_backend.Controllers.ValuesController (Pegasus_backend).
+2019-07-09 14:51:46.149 +12:00 [INF] Executing action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:51:46.164 +12:00 [INF] Executed action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.0457ms.
+2019-07-09 14:51:46.171 +12:00 [INF] Executing ObjectResult, writing value of type 'System.DateTime'.
+2019-07-09 14:51:46.216 +12:00 [INF] Executed action Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) in 202.7817ms
+2019-07-09 14:51:46.222 +12:00 [INF] Request finished in 438.4806ms 200 application/json; charset=utf-8
+2019-07-09 14:51:46.587 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-07-09 14:51:46.590 +12:00 [INF] Request finished in 2.7929ms 404 
+2019-07-09 14:51:48.945 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/NoticesModel  
+2019-07-09 14:51:48.945 +12:00 [INF] Request finished in 0.3872ms 404 
+2019-07-09 14:51:52.830 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/NoticesModels  
+2019-07-09 14:51:52.831 +12:00 [INF] Route matched with {action = "GetNoticesModel", controller = "NoticesModels"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Pegasus_backend.Models.NoticesModel] GetNoticesModel() on controller Pegasus_backend.Controllers.NoticesModelsController (Pegasus_backend).
+2019-07-09 14:51:52.838 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:51:52.838 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.3175ms.
+2019-07-09 14:51:52.839 +12:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Pegasus_backend.Models.NoticesModel, Pegasus_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-09 14:51:53.737 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:51:55.155 +12:00 [ERR] Failed executing DbCommand (126ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`NoticeId`, `n`.`CreatedAt`, `n`.`FromStaffId`, `n`.`IsCompleted`, `n`.`Notice`, `n`.`ToStaffId`
+FROM `NoticesModel` AS `n`
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2019-07-09 14:51:55.201 +12:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'Pegasus_backend.pegasusContext.ablemusicContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2019-07-09 14:51:55.204 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend) in 2372.4015ms
+2019-07-09 14:51:55.208 +12:00 [ERR] An unhandled exception has occurred while executing the request.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-09 14:51:55.226 +12:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-07-09 14:51:55.227 +12:00 [ERR] Connection id "0HLO431GN15L7", Request id "0HLO431GN15L7:00000003": An unhandled exception was thrown by the application.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-07-09 14:51:55.236 +12:00 [INF] Request finished in 2406.0142ms 200 application/json; charset=utf-8
+2019-07-09 14:52:01.840 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/NoticesModels  
+2019-07-09 14:52:01.840 +12:00 [INF] Route matched with {action = "GetNoticesModel", controller = "NoticesModels"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Pegasus_backend.Models.NoticesModel] GetNoticesModel() on controller Pegasus_backend.Controllers.NoticesModelsController (Pegasus_backend).
+2019-07-09 14:52:01.840 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:52:01.841 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.014700000000000001ms.
+2019-07-09 14:52:01.841 +12:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Pegasus_backend.Models.NoticesModel, Pegasus_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-09 14:52:01.841 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:52:02.505 +12:00 [ERR] Failed executing DbCommand (337ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`NoticeId`, `n`.`CreatedAt`, `n`.`FromStaffId`, `n`.`IsCompleted`, `n`.`Notice`, `n`.`ToStaffId`
+FROM `NoticesModel` AS `n`
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2019-07-09 14:52:02.508 +12:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'Pegasus_backend.pegasusContext.ablemusicContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2019-07-09 14:52:02.513 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend) in 672.8998ms
+2019-07-09 14:52:02.520 +12:00 [ERR] An unhandled exception has occurred while executing the request.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-09 14:52:02.531 +12:00 [WRN] The response has already started, the error page middleware will not be executed.
+2019-07-09 14:52:02.532 +12:00 [ERR] Connection id "0HLO431GN15L6", Request id "0HLO431GN15L6:00000003": An unhandled exception was thrown by the application.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider._TrackEntities[TOut,TIn](IEnumerable`1 results, QueryContext queryContext, IList`1 entityTrackingInfos, IList`1 entityAccessors)+MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Serialize(JsonWriter jsonWriter, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteObject(TextWriter writer, Object value)
+   at Microsoft.AspNetCore.Mvc.Formatters.JsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultAsync(IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResultExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeResultFilters()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2019-07-09 14:52:02.548 +12:00 [INF] Request finished in 707.7873ms 200 application/json; charset=utf-8
+2019-07-09 14:52:08.686 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/NoticesModels/1  
+2019-07-09 14:52:08.703 +12:00 [INF] Route matched with {action = "GetNoticesModel", controller = "NoticesModels"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetNoticesModel(Int32) on controller Pegasus_backend.Controllers.NoticesModelsController (Pegasus_backend).
+2019-07-09 14:52:08.716 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:52:08.718 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:52:09.262 +12:00 [ERR] Failed executing DbCommand (56ms) [Parameters=[@__get_Item_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT `e`.`NoticeId`, `e`.`CreatedAt`, `e`.`FromStaffId`, `e`.`IsCompleted`, `e`.`Notice`, `e`.`ToStaffId`
+FROM `NoticesModel` AS `e`
+WHERE `e`.`NoticeId` = @__get_Item_0
+LIMIT 1
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+2019-07-09 14:52:09.271 +12:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'Pegasus_backend.pegasusContext.ablemusicContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+2019-07-09 14:52:09.278 +12:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'Pegasus_backend.pegasusContext.ablemusicContext'.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+2019-07-09 14:52:09.368 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel (Pegasus_backend) in 665.5576ms
+2019-07-09 14:52:09.370 +12:00 [ERR] An unhandled exception has occurred while executing the request.
+MySql.Data.MySqlClient.MySqlException (0x80004005): Table 'ablemusic.NoticesModel' doesn't exist
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteAsync(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.BufferlessMoveNext(DbContext _, Boolean buffer, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncQueryingEnumerable`1.AsyncEnumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.FirstOrDefault_[TSource](IAsyncEnumerable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.TaskResultAsyncEnumerable`1.Enumerator.MoveNext(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.SelectEnumerableAsyncIterator`2.MoveNextCore(CancellationToken cancellationToken)
+   at System.Linq.AsyncEnumerable.AsyncIterator`1.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.AsyncLinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext(CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteSingletonAsyncQuery[TResult](QueryContext queryContext, Func`2 compiledQuery, IDiagnosticsLogger`1 logger, Type contextType)
+   at Pegasus_backend.Controllers.NoticesModelsController.GetNoticesModel(Int32 id) in D:\QQPCmgr\Desktop\pegasusBackend-master\Controllers\NoticesModelsController.cs:line 40
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-07-09 14:52:09.440 +12:00 [INF] Request finished in 754.0986ms 500 text/html; charset=utf-8
+2019-07-09 14:58:33.924 +12:00 [INF] User profile is available. Using 'C:\Users\Neco Yang\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2019-07-09 14:58:34.559 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/values  
+2019-07-09 14:58:34.559 +12:00 [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0
+2019-07-09 14:58:34.573 +12:00 [INF] Request finished in 14.4046ms 200 
+2019-07-09 14:58:34.598 +12:00 [WRN] Failed to determine the https port for redirect.
+2019-07-09 14:58:34.793 +12:00 [INF] Route matched with {action = "Get", controller = "Values"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller Pegasus_backend.Controllers.ValuesController (Pegasus_backend).
+2019-07-09 14:58:34.926 +12:00 [INF] Executing action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:58:34.938 +12:00 [INF] Executed action method Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 2.2834000000000003ms.
+2019-07-09 14:58:34.945 +12:00 [INF] Executing ObjectResult, writing value of type 'System.DateTime'.
+2019-07-09 14:58:34.987 +12:00 [INF] Executed action Pegasus_backend.Controllers.ValuesController.Get (Pegasus_backend) in 191.0978ms
+2019-07-09 14:58:34.991 +12:00 [INF] Request finished in 434.0384ms 200 application/json; charset=utf-8
+2019-07-09 14:58:35.356 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/favicon.ico  
+2019-07-09 14:58:35.359 +12:00 [INF] Request finished in 2.4332ms 404 
+2019-07-09 14:58:37.865 +12:00 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/notices  
+2019-07-09 14:58:37.869 +12:00 [INF] Route matched with {action = "GetNotices", controller = "Notices"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[Pegasus_backend.pegasusContext.Notices] GetNotices() on controller Pegasus_backend.Controllers.NoticesController (Pegasus_backend).
+2019-07-09 14:58:37.870 +12:00 [INF] Executing action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) - Validation state: "Valid"
+2019-07-09 14:58:37.870 +12:00 [INF] Executed action method Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.34550000000000003ms.
+2019-07-09 14:58:37.871 +12:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1[[Pegasus_backend.pegasusContext.Notices, Pegasus_backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2019-07-09 14:58:38.761 +12:00 [INF] Entity Framework Core 2.1.11-servicing-32099 initialized 'ablemusicContext' using provider 'MySql.Data.EntityFrameworkCore' with options: None
+2019-07-09 14:58:40.265 +12:00 [INF] Executed DbCommand (314ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT `n`.`notice_id`, `n`.`created_at`, `n`.`from_staff_id`, `n`.`is_completed`, `n`.`notice`, `n`.`to_staff_id`
+FROM `ablemusic`.`notices` AS `n`
+2019-07-09 14:58:40.328 +12:00 [INF] Executed action Pegasus_backend.Controllers.NoticesController.GetNotices (Pegasus_backend) in 2458.7463000000002ms
+2019-07-09 14:58:40.328 +12:00 [INF] Request finished in 2463.6911ms 200 application/json; charset=utf-8
